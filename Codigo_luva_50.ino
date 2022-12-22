@@ -34,8 +34,8 @@ int f = 0;
 #define LED_BUILTIN 2  //For node_MCU Lolin esp8266
 // Update these with values suitable for your network.
 
-const char* ssid = "Everaldo 2.4GHz extensao";
-const char* password = "59471453";
+const char* ssid = "id";
+const char* password = "pass";
 //Free mqtt server for testing
 const char* mqtt_server = "broker.mqtt-dashboard.com";
 //Local MQTT server - Tested using mosquitto mqtt for windows and linux
@@ -197,12 +197,12 @@ if (!client.connected()) {
   }
   client.loop();
 
-snprintf (msg, 100, "%d,%d,%d;%d,%d,%d.", AcX/100, AcY/100, AcZ/100, GyX/1000, GyY/1000, GyZ/1000);
+snprintf (msg, 100, "%d,%d,%d;%d,%d,%d.", AcX/100, AcY/100, AcZ/100, GyX/1000, -GyY/1000, GyZ/1000);
 client.publish("PIC2022/luva", msg);
 
 
 
-delay(200);
+delay(66);
 }
 
 void getAngle(int Vx,int Vy,int Vz) {

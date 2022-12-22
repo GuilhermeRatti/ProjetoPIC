@@ -7,14 +7,14 @@ public class mqttControllerCube : MonoBehaviour
   float gy_x=0, gy_y=0, gy_z=0;
   int contador = -1; 
   bool trava = true;
-  float[] vetorX = new float[10];
-  float[] vetorY = new float[10];
-  float[] vetorZ = new float[10];
+  float[] vetorX = new float[100];
+  float[] vetorY = new float[100];
+  float[] vetorZ = new float[100];
 
   float m_x1, m_y1, m_z1, m_x2, m_y2, m_z2; 
 
   
-  float smooth = 3.0f;
+  float smooth = 1f;
   public string nameController = "Controller 1";
   public string tagOfTheMQTTReceiver="";
   public mqttReceiver _eventSender;
@@ -37,15 +37,15 @@ public class mqttControllerCube : MonoBehaviour
 
     
     if(float.TryParse(gyro[0], out x) && float.TryParse(gyro[1], out y) && float.TryParse(gyro[2], out z)){
-      
+      /*
       contador += 1;
-      contador %= 10;
+      contador %= 100;
 
       vetorX[contador] = x;
       vetorY[contador] = z;
       vetorZ[contador] = y;
 
-      if(contador == 9){
+      if(contador == 99){
         trava = false;
       }
       if(trava){
@@ -59,36 +59,41 @@ public class mqttControllerCube : MonoBehaviour
       m_z2 = m_z1;
 
       soma=0;
-      for (int i = 0; i < 10; i++)
+      for (int i = 0; i < 100; i++)
       {
         soma += vetorX[i];
       }
-      m_x1 = soma/10;
+      m_x1 = soma/100;
       
       soma=0;
-      for (int i = 0; i < 10; i++)
+      for (int i = 0; i < 100; i++)
       {
         soma += vetorY[i];
       }
-      m_y1 = soma/10;
+      m_y1 = soma/100;
 
       soma=0;
-      for (int i = 0; i < 10; i++)
+      for (int i = 0; i < 100; i++)
       {
         soma += vetorZ[i];
       }
-      m_z1 = soma/10;
+      m_z1 = soma/100;
       
 
-      Debug.Log($"{m_x1-m_x2},{m_y1-m_y2},{m_z1-m_z2}");
-
-      gy_x += (m_x1-m_x2)*(3/2);
-      gy_y += (m_y1-m_y2)*(3/2);
-      gy_z += (m_z1-m_z2)*(3/2);
       
-      //gy_x += (x/10)*(3/2);
-      //gy_y += (z/10)*(3/2);
-      //gy_z += (y/10)*(3/2);
+      
+      
+      //gy_x += (m_x1-m_x2)*100/3;
+      //gy_y += (m_y1-m_y2)*100/3;
+      //gy_z += (m_z1-m_z2)*100/3;
+      
+      */
+
+      Debug.Log($"{x},{y},{z}");
+      
+      gy_x += x/1.5f;
+      gy_y += z/1.85f;
+      gy_z += y/1.75f;
     }
 
   }
