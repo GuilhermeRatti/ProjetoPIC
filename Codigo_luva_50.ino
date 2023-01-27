@@ -37,7 +37,7 @@ int f = 0;
 const char* ssid = "id";
 const char* password = "pass";
 //Free mqtt server for testing
-const char* mqtt_server = "broker.mqtt-dashboard.com";
+const char* mqtt_server = "test.mosquitto.org";
 //Local MQTT server - Tested using mosquitto mqtt for windows and linux
 //const char* mqtt_server = "192.168.137.1";
 
