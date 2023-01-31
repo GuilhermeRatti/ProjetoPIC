@@ -20,4 +20,5 @@ em sentidos e ângulos diferentes, por exemplo.
 
 Detalhe:
     1 - Nem todas as informações captadas pelo giroscópio são mandadas com êxito para o Unity.
-Portanto, movimento muito brusco e pouco intervalado com as mãos, não será garantido a reprodução do movimento da mão.
+Portanto, movimento muito brusco e pouco intervalado com as mãos, não será garantido a reprodução do movimento da mão
+no mini jogo do unity.
