@@ -25,7 +25,9 @@ no mini jogo do unity.
 
 Esquemático do Circuito da Luva:
 
-![mpu-6050-with-esp8266-nodemcu](https://user-images.githubusercontent.com/111801182/215936305-392a146e-f174-41db-a751-f1eca70ffd69.jpg =120x20)
+<img src="[drawing.jpg](https://user-images.githubusercontent.com/111801182/215936305-392a146e-f174-41db-a751-f1eca70ffd69.jpg)" alt="drawing" width="200" height="100"/>
+
+![mpu-6050-with-esp8266-nodemcu](https://user-images.githubusercontent.com/111801182/215936305-392a146e-f174-41db-a751-f1eca70ffd69.jpg)
 
 Foto da Luva montada com o Unity integrado:
 
