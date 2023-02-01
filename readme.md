@@ -31,3 +31,16 @@ Foto da Luva montada com o Unity integrado:
 
 <img src="https://user-images.githubusercontent.com/111801182/215936792-6959ef9a-837b-4948-81ab-4baa22f50596.jpeg" alt="luva" width="270" height="470"/>
 
+Dependências para realizar o projeto:
+  FISICOS:
+    1 ESP-8266,
+    1 MPU3060,
+    1 encaixe de bateria,
+    1 bateria,
+    1 luva,
+    jumpers.
+    
+  PROGRAMAS:
+    Unity,
+    Biblioteca de MQTT para Unity: https://github.com/CE-SDV-Unity/M2MqttUnity.
+  
