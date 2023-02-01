@@ -22,3 +22,7 @@ Detalhe:
     1 - Nem todas as informações captadas pelo giroscópio são mandadas com êxito para o Unity.
 Portanto, movimento muito brusco e pouco intervalado com as mãos, não será garantido a reprodução do movimento da mão
 no mini jogo do unity.
+
+Esquemático do Circuito da Luva:
+
+![mpu-6050-with-esp8266-nodemcu](https://user-images.githubusercontent.com/111801182/215936305-392a146e-f174-41db-a751-f1eca70ffd69.jpg)
