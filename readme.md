@@ -29,4 +29,5 @@ Esquemático do Circuito da Luva:
 
 Foto da Luva montada com o Unity integrado:
 
-![mpu-6050-with-esp8266-nodemcu](https://user-images.githubusercontent.com/111801182/215936595-5613e906-c1c1-4acd-b200-29ba799f124e.jpg)
+![d445a593-60dd-4133-ae6d-116964873d6f (1)](https://user-images.githubusercontent.com/111801182/215936792-6959ef9a-837b-4948-81ab-4baa22f50596.jpeg)
+
